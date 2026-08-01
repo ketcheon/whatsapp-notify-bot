@@ -166,6 +166,7 @@ DEBUG_LOGS=1 npm start
 
 ## Notes
 
+- **WhatsApp linked device limit:** WhatsApp allows a maximum of **4 linked devices** per account (your phone counts as the primary, not one of the 4). The bot occupies one of those slots. Your existing linked devices (e.g. WhatsApp Web on your laptop) are unaffected — linking the bot does not disconnect them. If you are already at the 4-device limit, you will need to unlink one before scanning the QR code.
 - The cron scheduler runs in the timezone specified per-event; make sure your timezone string is a valid IANA name.
 - `whatsapp.json` and `.wwebjs_auth/` are excluded from git via `.gitignore` — they contain your real group IDs and session tokens.
 - Keep `recipients.json` private if it contains real phone numbers; consider adding it to `.gitignore` once you've configured it.
@@ -173,8 +174,6 @@ DEBUG_LOGS=1 npm start
 ## License
 
 MIT
-
-## Features 功能
 
 - Schedule messages with standard cron expressions
   > 使用标准 cron 表达式定时发送消息
