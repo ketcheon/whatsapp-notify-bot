@@ -45,7 +45,21 @@ executablePath: '/usr/bin/google-chrome-stable', // Linux
 npm run export:whatsapp
 ```
 
-按提示用 WhatsApp 扫描二维码。认证成功后，机器人会导出所有群组并退出。打开 `whatsapp.json` 查找所需的群组 ID。
+按提示用 WhatsApp 扫描二维码。认证成功后，机器人会导出所有群组并退出。生成的 `whatsapp.json` 格式如下：
+
+```json
+{
+  "generatedAt": "2026-08-01T10:00:00.000Z",
+  "totalGroups": 3,
+  "groups": [
+    { "name": "Family Chat",       "id": "60100000001-1234567890@g.us" },
+    { "name": "Office Team",        "id": "120363000000000001@g.us" },
+    { "name": "Weekend Hikers",     "id": "120363000000000002@g.us" }
+  ]
+}
+```
+
+将需要的 `id` 值复制到 `recipients.json` 中并设置别名（见第 3 步）。
 
 ### 3. 配置收件人
 

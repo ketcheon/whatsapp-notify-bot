@@ -45,7 +45,21 @@ This step discovers your group IDs and saves them to `whatsapp.json`:
 npm run export:whatsapp
 ```
 
-Scan the QR code with WhatsApp when prompted. Once authenticated, the bot exports all your groups and exits. Open `whatsapp.json` to find the group IDs you need.
+Scan the QR code with WhatsApp when prompted. Once authenticated, the bot exports all your groups and exits. The resulting `whatsapp.json` looks like this:
+
+```json
+{
+  "generatedAt": "2026-08-01T10:00:00.000Z",
+  "totalGroups": 3,
+  "groups": [
+    { "name": "Family Chat",       "id": "60100000001-1234567890@g.us" },
+    { "name": "Office Team",        "id": "120363000000000001@g.us" },
+    { "name": "Weekend Hikers",     "id": "120363000000000002@g.us" }
+  ]
+}
+```
+
+Copy the `id` values you need into `recipients.json` as aliases (see step 3).
 
 ### 3. Configure recipients
 
