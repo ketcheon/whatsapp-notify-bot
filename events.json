@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Single Message With Alias Mention",
+    "cron": "20 15 * * *",
+    "message": "BOT: Hello family_main, reminder at 3:20pm!",
+    "timezone": "Asia/Kuala_Lumpur",
+    "recipients": [
+      "family_main"
+    ],
+    "mentions": [
+      "alice"
+    ]
+  },
+  {
+    "name": "Multi Message Per Event",
+    "cron": "35 15 * * *",
+    "timezone": "Asia/Kuala_Lumpur",
+    "messages": [
+      {
+        "message": "BOT: Hello family_main, reminder at 3:35pm!",
+        "recipients": [
+          "family_main"
+        ],
+        "mentions": [
+          "alice"
+        ]
+      },
+      {
+        "message": "BOT: Hello family_alt, reminder at 3:35pm!",
+        "recipients": [
+          "family_alt"
+        ],
+        "mentions": [
+          "bob"
+        ]
+      }
+    ]
+  }
+]

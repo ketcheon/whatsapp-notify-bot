@@ -1,0 +1,16 @@
+{
+  "groups": {
+    "family_main": "60100000001-0000000000@g.us",
+    "family_alt": "120363000000000000@g.us"
+  },
+  "people": {
+    "alice": "60100000002",
+    "bob": "60100000003"
+  },
+  "lists": {
+    "everyone": [
+      "family_main",
+      "family_alt"
+    ]
+  }
+}
